@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+    <title>Mase Game</title>
+</head>
+<body>
+    <div class="winner hidden-win">
+        <h1>You Win!</h1> <br>
+        <button class="restartWin">Restart</button>
+    </div>
+    <div class="icon">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+
+    </div>
+    <div class = "setup hidden-setup" >
+        <button class="restartSet">Restart</button> 
+        <button class="change">Change Size</button>
+        <button class="gravityOn">Gravity On</button>
+        <button class="gravityOff">Gravity Off</button>
+        <button class="close">Close</button>
+    </div>
+
+    <div class="changer hidden-changer">
+        <h2>HorizontalCells</h2>
+        <input type="number" name="HorizontalCells" id="HorizontalCells" value="5">
+        <h2>VerticalCells</h2>
+        <input type="number" name="VerticalCells" id="VerticalCells" value="5">
+        <div class="changerBtn">
+            <button class="applyBtn">Apply</button>
+            <button class="backBtn">Back</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
