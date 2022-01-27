@@ -3,7 +3,6 @@ const { Engine, Render, Runner, World, Bodies, Body , Events} = Matter;
   //        Game
   //*********************
 
-
 const horizontalInput = document.querySelector('#HorizontalCells'); 
 const verticalInput = document.querySelector('#VerticalCells'); 
 const engine = Engine.create();
@@ -29,6 +28,14 @@ const render = Render.create({
 });
 Render.run(render);
 Runner.run(Runner.create(), engine);
+//Instructions
+
+
+setTimeout(() => {
+    document.querySelector('.instructions').classList.add('hidden-instructions');
+
+}, 4000);
+
 
 
 
@@ -320,3 +327,4 @@ changeBackBtn.addEventListener('click', () => {
     document.querySelector('.changer').classList.toggle('hidden-changer');
     document.querySelector('.setup').classList.toggle('hidden-setup');
 });
+
