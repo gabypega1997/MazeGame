@@ -14,7 +14,6 @@ const cellsHorizontal = Math.floor( horizontalInput.value);
 const cellsVertical = Math.floor(verticalInput.value);
 const width = window.innerWidth;
 const height = window.innerHeight - 4;
-
 const unitLenghtX = width/cellsHorizontal;
 const unitLenghtY = height/cellsVertical;
 engine.world.gravity.y = 0;
@@ -45,7 +44,6 @@ const walls = [
 ];
 
 World.add(world, walls);
- 
 //Maze generation
 const shuffel = (arr) => {
     let counter = arr.length;
@@ -206,16 +204,16 @@ World.add(world, ball);
 
 document.addEventListener('keydown', event => {
    const { x, y} = ball.velocity;
-       if (event.keyCode === 87) {
+       if (event.keyCode === 87 || event.keyCode === 38  ) {
         Body.setVelocity(ball, {x , y: y - 3.5 });
     }
-    if (event.keyCode === 68) {
+    if (event.keyCode === 68 || event.keyCode === 39 ) {
         Body.setVelocity(ball, {x: x + 3.5 , y});
     }
-    if (event.keyCode === 83) {
+    if (event.keyCode === 83 || event.keyCode === 40 ) {
         Body.setVelocity(ball, {x , y: y + 3.5})
     }
-    if (event.keyCode === 65) {
+    if (event.keyCode === 65 || event.keyCode === 37 ) {
         Body.setVelocity(ball, {x: x - 3.5 , y});
     }
 });
