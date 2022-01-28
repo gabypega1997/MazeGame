@@ -47,10 +47,19 @@ input{
     height: 100vh;
     width:100vw;
     position: absolute;
+    animation-name: hiden-instructions;
+    animation-duration: 4s;
+    opacity: 0;
 }
-.hidden-instructions{
-display: none;
+
+@keyframes hiden-instructions {
+    0%{opacity: 1;}
+    50%{opacity: 1;}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
 }
+
+
 
 .instructions--player{
     position: absolute;

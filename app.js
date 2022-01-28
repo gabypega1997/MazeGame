@@ -31,11 +31,12 @@ Runner.run(Runner.create(), engine);
 //Instructions
 
 
-setTimeout(() => {
-    document.querySelector('.instructions').classList.add('hidden-instructions');
+// setTimeout(() => {
+//     document.querySelector('.instructions').classList.add('hidden-instructions');
 
-}, 4000);
+// }, 4000);
 
+//!! I decide to use css to handle instructions
 
 
 
